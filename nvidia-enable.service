@@ -1,0 +1,10 @@
+[Unit]
+Description=Enable NVIDIA card
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/home/blmhemu/nvidia-scripts/nvidia_on_nodep.sh'
+
+[Install]
+WantedBy=shutdown.target
